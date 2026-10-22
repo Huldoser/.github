@@ -1,0 +1,36 @@
+name: Bug report
+description: Something doesn't work as documented.
+labels: [bug]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Commands you ran and files involved. A link to a small repository helps most.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error output
+      description: The full error and stack trace, if there is one.
+      render: text
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: This project's version, your OS, and the runtime (Node.js, Python) if it applies.
+    validations:
+      required: true
